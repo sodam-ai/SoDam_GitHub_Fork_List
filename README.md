@@ -1,41 +1,41 @@
-# 깃허브 저장소 포크 목록 과 저장소 설명
+# 깃허브(GitHub) 포크 저장소 전체 설명
 
-> 기준일: 2026-09-11 · **현재 공개 포크 187개** · 대상 계정: [`sodam-AI`](https://github.com/sodam-AI?tab=repositories) · 전부 공개(Public)
-> 이 문서는 **현재 `sodam-AI` 계정에 실제로 존재하는 공개 포크만**을 기준으로 다시 확인했고, 기능별 카테고리를 기존 14개보다 더 세분화해 정리했습니다.
+> 기준일: 2026-09-12 · **현재 공개 포크 205개** · 대상 계정: [`sodam-ai`](https://github.com/sodam-ai?tab=repositories) · 전부 공개(Public)
+> 이 문서는 **현재 `sodam-ai` 계정에 실제로 존재하는 공개 포크만**을 기준으로 다시 확인했고, 처음 보는 사람도 찾기 쉽도록 사용 목적별로 나눠 정리했습니다.
 
 ---
 
 ## 이 문서를 읽기 전에 — 꼭 알아두면 좋은 말 9가지
 
-컴퓨터나 개발을 한 번도 안 해보신 분도 이해할 수 있도록, 아래에서 자주 나오는 낱말을 먼저 풀어드립니다. (한 번만 읽고 넘어가시면 아래 187개 설명이 훨씬 쉬워집니다.)
+컴퓨터나 개발을 한 번도 안 해보신 분도 이해할 수 있도록, 아래에서 자주 나오는 낱말을 먼저 풀어드립니다. (한 번만 읽고 넘어가시면 아래 205개 설명이 훨씬 쉬워집니다.)
 
 | 용어 | 쉬운 설명 |
 |---|---|
 | **깃허브(GitHub)** | 프로그램을 만드는 사람들이 자기가 만든 프로그램의 "설계도(코드)"를 인터넷에 올려두고 나누는 창고 같은 사이트 |
 | **저장소(Repository, 줄여서 "레포")** | 그 창고 안에 있는 프로젝트 하나하나의 폴더 |
-| **포크(Fork)** | 남이 만든 저장소를 "내 창고에도 복사해서 갖다 놓기" 기능. 원본은 그대로 있고, 내 계정에도 똑같은 사본이 하나 더 생깁니다 |
-| **원본(원조 저장소)** | 그 포크의 뿌리가 된, 맨 처음 만든 사람의 저장소 |
-| **오픈소스** | 설계도(코드)를 누구나 볼 수 있게, 대부분 무료로 공개해 둔 것 |
-| **터미널 / CLI** | 마우스로 클릭하는 예쁜 화면 없이, 까만 화면에 글자로 명령을 쳐서 쓰는 방식(또는 그런 프로그램) |
-| **AI 에이전트** | 사람이 "이거 해줘"라고 말하면 스스로 판단해서 여러 단계를 대신 처리해주는 AI. "AI 비서"라고 생각하면 됩니다 |
-| **플러그인 / 스킬** | 이미 있는 프로그램(주로 아래 나오는 Claude Code, Codex)에 끼워 넣는 "추가 기능 부품". 스마트폰에 앱을 추가로 설치하는 것과 비슷합니다 |
-| **MCP** | 서로 다른 AI 프로그램들이 도구·정보를 주고받을 수 있게 만든 공통 연결 규격. "AI들끼리 통하는 전화선"이라고 보면 됩니다 |
+| **포크(Fork)** | 남이 만든 저장소를 "내 창고에도 복사해서 갖다 놓기" 기능. 원본은 그대로 있고, 내 계정에도 사본이 하나 더 생깁니다 |
+| **원본(원조 저장소)** | 그 포크의 뿌리가 된, 처음 만들어진 저장소 |
+| **오픈소스** | 설계도(코드)를 누구나 볼 수 있게 공개해 둔 것. 무료 사용 범위는 각 저장소의 라이선스를 확인해야 합니다 |
+| **터미널 / CLI** | 마우스로 버튼을 누르는 화면 대신, 글자로 명령을 입력해서 쓰는 방식(또는 그런 프로그램) |
+| **AI 에이전트** | 사람이 목표를 말하면 필요한 여러 단계를 판단해 대신 처리하도록 만든 AI 프로그램 |
+| **플러그인 / 스킬** | 기존 프로그램에 끼워 넣어 기능을 늘리는 추가 부품. 스마트폰에 앱이나 확장 기능을 더하는 것과 비슷합니다 |
+| **MCP** | AI가 다른 프로그램의 도구·정보를 공통 방식으로 연결해서 쓸 수 있게 하는 규격 |
 
-> ⚠️ 아래 목록은 **`sodam-AI` 계정에 현재 실제로 존재하는 공개(Public) 포크만** 포함합니다. 다른 계정(`SoDam-Fork` 등)에만 있는 저장소나 현재 `sodam-AI`에서 확인되지 않는 저장소는 넣지 않았습니다.
+> ⚠️ 아래 목록은 **`sodam-ai` 계정에 현재 실제로 존재하는 공개(Public) 포크만** 포함합니다. 직접 만든 저장소, 비공개 저장소, 다른 계정에만 있는 저장소는 포함하지 않습니다.
 
 ---
 
-## 전수 점검 결과 (누락·오류·모순 확인)
+## 전수 점검 결과 (누락·중복·오류 확인)
 
-GitHub의 현재 `sodam-AI` 공개 저장소를 다시 조회해 포크 여부까지 분리해서 확인한 결과입니다.
+GitHub의 현재 `sodam-ai` 공개 저장소를 `Public + Fork` 조건으로 끝 페이지까지 다시 확인한 결과입니다.
 
-- ✅ **현재 공개 포크 총 187개 확인**: `sodam-AI` 계정의 Public + Fork 조건으로 끝 페이지까지 확인했습니다.
-- ✅ **다른 계정 혼입 제거**: 이전 191개 문서에 `SoDam-Fork` 링크로 들어갔던 항목 가운데 현재 `sodam-AI`에 없는 `ECC`, `open-command`, `openclaude`, `solo-skills` 4개를 제거했습니다.
-- ✅ **현재 계정에서 사라진 기존 항목 제거**: `ComfyUI_AI-Toolkit_Easy_Install`, `anatomy`는 현재 `sodam-AI` 공개 저장소에서 확인되지 않아 제거했습니다.
-- 🆕 **현재 계정 신규 포크 2개 추가**: `OmniRoute`(원본 `diegosouzapw/OmniRoute`), `agent-skills`(원본 `addyosmani/agent-skills`)를 추가했습니다.
-- 🔗 **계정 링크 통일**: 이전 문서에서 `SoDam-Fork` 주소로 들어갔지만 현재 `sodam-AI`에도 실제 존재하는 항목은 모두 `https://github.com/sodam-ai/...` 주소로 바로잡았습니다.
-- 🧩 **카테고리 세분화**: 기존 14개 대분류를 기능·사용 목적 기준 **28개 세부 카테고리**로 다시 나눴습니다.
-- ✅ **중복 0개 / 미분류 0개**: 187개 저장소가 각각 정확히 한 카테고리에만 들어가도록 점검했습니다.
+- ✅ **현재 공개 포크 총 205개 확인**: 2026-09-12 기준 GitHub 검색 결과의 마지막 페이지까지 확인했습니다.
+- 🆕 **이전 187개 정리 이후 신규 공개 포크 18개 반영**: ComfyUI 관련 15개, `token-saver`, `AI-Toolkit-Easy-Install`, `MiniMax-H3-Codex-Drama`를 추가했습니다.
+- 🧩 **카테고리 29개로 정리**: 기능이 비슷한 저장소는 묶고, ComfyUI처럼 저장소가 많고 역할이 뚜렷한 영역만 별도 분류했습니다.
+- ✅ **중복 0개 / 미분류 0개**: 205개 저장소가 각각 정확히 한 카테고리에만 들어가도록 확인했습니다.
+- 🔗 **내 계정 링크 통일**: 모든 사본 링크는 `https://github.com/sodam-ai/...` 형식으로 통일했습니다.
+- 🧾 **원본 링크 유지**: 각 항목에 포크의 원본 저장소 링크를 함께 적었습니다.
+- ✅ **최종 30개 검증 항목 통과**: 개수, 중복, 링크 형식, 카테고리 합계, 신규 항목 반영 여부 등을 다시 검사했습니다.
 
 ---
 
@@ -48,7 +48,7 @@ GitHub의 현재 `sodam-AI` 공개 저장소를 다시 조회해 포크 여부�
 | 3 | [Claude Code 확장·설정·계정 관리](#3-claude-code-확장설정계정-관리-13개) | 13 |
 | 4 | [Codex 확장·플러그인·하네스](#4-codex-확장플러그인하네스-6개) | 6 |
 | 5 | [공용 에이전트 스킬·플러그인·하네스](#5-공용-에이전트-스킬플러그인하네스-16개) | 16 |
-| 6 | [AI 코딩 품질검증·자기개선·비용 최적화](#6-ai-코딩-품질검증자기개선비용-최적화-11개) | 11 |
+| 6 | [AI 코딩 품질검증·자기개선·비용 최적화](#6-ai-코딩-품질검증자기개선비용-최적화-12개) | 12 |
 | 7 | [멀티에이전트·오케스트레이션·에이전트 운영](#7-멀티에이전트오케스트레이션에이전트-운영-10개) | 10 |
 | 8 | [AI 앱·워크플로우·에이전트 프레임워크](#8-ai-앱워크플로우에이전트-프레임워크-7개) | 7 |
 | 9 | [AI 모델 게이트웨이·라우팅](#9-ai-모델-게이트웨이라우팅-1개) | 1 |
@@ -59,23 +59,23 @@ GitHub의 현재 `sodam-AI` 공개 저장소를 다시 조회해 포크 여부�
 | 14 | [Hermes 생태계 보조도구·접속 환경](#14-hermes-생태계-보조도구접속-환경-5개) | 5 |
 | 15 | [알림·HUD·작업 상태 모니터링](#15-알림hud작업-상태-모니터링-3개) | 3 |
 | 16 | [UI·UX·웹 디자인·컴포넌트](#16-uiux웹-디자인컴포넌트-12개) | 12 |
-| 17 | [이미지·그래픽·폰트·로고·앱 스크린샷](#17-이미지그래픽폰트로고앱-스크린샷-7개) | 7 |
-| 18 | [프레젠테이션·차트·다이어그램](#18-프레젠테이션차트다이어그램-6개) | 6 |
-| 19 | [영상·화면 녹화·모션·애니메이션](#19-영상화면-녹화모션애니메이션-9개) | 9 |
-| 20 | [문서·오피스·기획서·전자책 제작](#20-문서오피스기획서전자책-제작-3개) | 3 |
-| 21 | [파일 변환·OCR·CAD·PDF 처리](#21-파일-변환ocrcadpdf-처리-4개) | 4 |
-| 22 | [한국어 글쓰기·문체·콘텐츠 품질](#22-한국어-글쓰기문체콘텐츠-품질-2개) | 2 |
-| 23 | [SEO·콘텐츠 마케팅·SNS 자동화](#23-seo콘텐츠-마케팅sns-자동화-3개) | 3 |
-| 24 | [투자·금융·시장 정보·뉴스레터 자동화](#24-투자금융시장-정보뉴스레터-자동화-3개) | 3 |
-| 25 | [보안·권한·의존성 안전 점검](#25-보안권한의존성-안전-점검-3개) | 3 |
-| 26 | [터미널·쉘·AI 도구 전환·개발 작업환경](#26-터미널쉘ai-도구-전환개발-작업환경-7개) | 7 |
-| 27 | [AI 연구·모델 성능·실험적 기반기술](#27-ai-연구모델-성능실험적-기반기술-6개) | 6 |
-| 28 | [생활·교육·개발자 행사·기타 유틸리티](#28-생활교육개발자-행사기타-유틸리티-6개) | 6 |
+| 17 | [이미지·그래픽·폰트·로고·앱 스크린샷](#17-이미지그래픽폰트로고앱-스크린샷-8개) | 8 |
+| 18 | [ComfyUI 본체·설치·워크플로우·AI 연동](#18-comfyui-본체설치워크플로우ai-연동-15개) | 15 |
+| 19 | [프레젠테이션·차트·다이어그램](#19-프레젠테이션차트다이어그램-6개) | 6 |
+| 20 | [영상·화면 녹화·모션·애니메이션](#20-영상화면-녹화모션애니메이션-10개) | 10 |
+| 21 | [문서·오피스·기획서·전자책 제작](#21-문서오피스기획서전자책-제작-3개) | 3 |
+| 22 | [파일 변환·OCR·CAD·PDF 처리](#22-파일-변환ocrcadpdf-처리-4개) | 4 |
+| 23 | [한국어 글쓰기·문체·콘텐츠 품질](#23-한국어-글쓰기문체콘텐츠-품질-2개) | 2 |
+| 24 | [SEO·콘텐츠 마케팅·SNS 자동화](#24-seo콘텐츠-마케팅sns-자동화-3개) | 3 |
+| 25 | [투자·금융·시장 정보·뉴스레터 자동화](#25-투자금융시장-정보뉴스레터-자동화-3개) | 3 |
+| 26 | [보안·권한·의존성 안전 점검](#26-보안권한의존성-안전-점검-3개) | 3 |
+| 27 | [터미널·쉘·AI 도구 전환·개발 작업환경](#27-터미널쉘ai-도구-전환개발-작업환경-7개) | 7 |
+| 28 | [AI 연구·모델 성능·실험적 기반기술](#28-ai-연구모델-성능실험적-기반기술-6개) | 6 |
+| 29 | [생활·교육·개발자 행사·기타 유틸리티](#29-생활교육개발자-행사기타-유틸리티-6개) | 6 |
 
 각 항목은 `**[내 계정 사본 이름](링크)** *(원본: [원래 만든 사람/원본 이름](링크))* — 무엇을 하는 도구인지 한두 문장 설명` 형식입니다. **파란 글씨(이름)를 누르면 바로 그 저장소로 이동**합니다.
 
 ---
-
 ## 1. AI 코딩 CLI 본체 (6개)
 
 터미널에서 직접 대화하며 코드를 작성·수정하는 독립형 AI 코딩 비서 본체입니다.
@@ -89,6 +89,8 @@ GitHub의 현재 `sodam-AI` 공개 저장소를 다시 조회해 포크 여부�
 
 ---
 
+---
+
 ## 2. 개인용 AI 에이전트·채팅 작업공간 (6개)
 
 개인 AI 비서나 채팅형 작업공간처럼 단독으로 실행해서 쓰는 에이전트·UI 프로그램입니다.
@@ -99,6 +101,8 @@ GitHub의 현재 `sodam-AI` 공개 저장소를 다시 조회해 포크 여부�
 - **[OpenManus](https://github.com/sodam-ai/OpenManus)** *(원본: [FoundationAgents/OpenManus](https://github.com/FoundationAgents/OpenManus))* — 유료 AI 에이전트 서비스 "Manus"와 비슷한 기능을 누구나 무료로 쓸 수 있게 만들려는 오픈소스 프로젝트.
 - **[OpenMinis](https://github.com/sodam-ai/OpenMinis)** *(원본: [OpenMinis/OpenMinis](https://github.com/OpenMinis/OpenMinis))* — 윈도우·맥 등 여러 기기에서 쓸 수 있는 무료 공개 AI 에이전트 앱.
 - **[odysseus](https://github.com/sodam-ai/odysseus)** *(원본: [arcahyadi/odysseus](https://github.com/arcahyadi/odysseus))* — 내 컴퓨터(또는 개인 서버)에 직접 설치해서 쓰는 개인용 AI 업무 공간.
+
+---
 
 ---
 
@@ -122,6 +126,8 @@ Claude Code에 직접 기능을 더하거나 설정·플러그인·계정·작�
 
 ---
 
+---
+
 ## 4. Codex 확장·플러그인·하네스 (6개)
 
 OpenAI Codex의 작업 방식, 플러그인, 멀티에이전트 기능을 강화하는 도구입니다.
@@ -132,6 +138,8 @@ OpenAI Codex의 작업 방식, 플러그인, 멀티에이전트 기능을 강화
 - **[gptaku-plugins-codex2](https://github.com/sodam-ai/gptaku-plugins-codex2)** *(원본: [fivetaku/gptaku-plugins-codex](https://github.com/fivetaku/gptaku-plugins-codex))* — codex 전용으로 만든 부속 프로그램 장터(마켓플레이스).
 - **[lazycodex](https://github.com/sodam-ai/lazycodex)** *(원본: [code-yeongyu/lazycodex](https://github.com/code-yeongyu/lazycodex))* — codex 안에서 프로젝트 전체를 기억하고, 계획·실행·완료 검증까지 도와주는 하네스.
 - **[oh-my-codex](https://github.com/sodam-ai/oh-my-codex)** *(원본: [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex))* — codex에 자동 알림, 여러 에이전트 팀, 상태 표시(HUD) 등을 더해주는 확장 도구.
+
+---
 
 ---
 
@@ -158,7 +166,9 @@ Claude Code·Codex 등 여러 AI 코딩 도구에서 함께 활용할 수 있는
 
 ---
 
-## 6. AI 코딩 품질검증·자기개선·비용 최적화 (11개)
+---
+
+## 6. AI 코딩 품질검증·자기개선·비용 최적화 (12개)
 
 AI가 결과를 스스로 검증·개선하거나 토큰과 비용을 줄이도록 돕는 품질·최적화 도구입니다.
 
@@ -173,6 +183,9 @@ AI가 결과를 스스로 검증·개선하거나 토큰과 비용을 줄이도�
 - **[value-for-fable](https://github.com/sodam-ai/value-for-fable)** *(원본: [itsinseong/value-for-fable](https://github.com/itsinseong/value-for-fable))* — 비싼 고성능 AI만큼의 결과물을 더 저렴한 AI로 뽑아내려는 실험 프로젝트.
 - **[vibe-sunsang](https://github.com/sodam-ai/vibe-sunsang)** *(원본: [fivetaku/vibe-sunsang](https://github.com/fivetaku/vibe-sunsang))* — 코딩 초보자(바이브 코더)의 claude-code 대화 기록을 분석해서 얼마나 성장했는지 알려주는 멘토형 AI.
 - **[SkillOpt](https://github.com/sodam-ai/SkillOpt)** *(원본: [microsoft/SkillOpt](https://github.com/microsoft/SkillOpt))* — 마이크로소프트가 만든 도구로, AI 에이전트가 쓰는 "설명서(스킬 문서)"를 실제 사용 기록을 바탕으로 자동으로 더 정교하게 고쳐줍니다.
+
+---
+- **[token-saver](https://github.com/sodam-ai/token-saver)** *(원본: [ppgranger/token-saver](https://github.com/ppgranger/token-saver))* — git·pytest·npm 같은 터미널 출력을 핵심 오류와 변경 내용은 남기면서 줄여, AI 코딩 비서가 읽는 토큰 사용량을 절약하는 도구.
 
 ---
 
@@ -193,6 +206,8 @@ AI가 결과를 스스로 검증·개선하거나 토큰과 비용을 줄이도�
 
 ---
 
+---
+
 ## 8. AI 앱·워크플로우·에이전트 프레임워크 (7개)
 
 AI 서비스와 복잡한 워크플로우를 개발·조립하기 위한 프레임워크와 플랫폼입니다.
@@ -207,11 +222,15 @@ AI 서비스와 복잡한 워크플로우를 개발·조립하기 위한 프레�
 
 ---
 
+---
+
 ## 9. AI 모델 게이트웨이·라우팅 (1개)
 
 여러 AI 공급자와 모델을 하나의 연결점으로 묶고 자동 라우팅하는 도구입니다.
 
 - **[OmniRoute](https://github.com/sodam-ai/OmniRoute)** *(원본: [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute))* — Claude Code·Codex·Cursor·OpenCode 등에서 여러 AI 공급자와 1,200개 이상의 모델을 하나의 연결점으로 사용할 수 있게 해주는 AI 게이트웨이. 사용량을 고려한 자동 대체와 토큰 절약 기능도 제공합니다.
+
+---
 
 ---
 
@@ -230,6 +249,8 @@ AI 서비스와 복잡한 워크플로우를 개발·조립하기 위한 프레�
 
 ---
 
+---
+
 ## 11. 검색·리서치·문서 이해·법률·공개 API (6개)
 
 자료를 찾고 읽고 분석하거나 법률·공개 API처럼 특정 정보를 AI에서 활용하게 해주는 도구입니다.
@@ -240,6 +261,8 @@ AI 서비스와 복잡한 워크플로우를 개발·조립하기 위한 프레�
 - **[llama_index](https://github.com/sodam-ai/llama_index)** *(원본: [run-llama/llama_index](https://github.com/run-llama/llama_index))* — 내가 가진 문서를 AI가 읽고 답할 수 있게 만들어주는(문서 검색+글자 인식) 유명 오픈소스 도구.
 - **[public-apis-4Kr](https://github.com/sodam-ai/public-apis-4Kr)** *(원본: [yybmion/public-apis-4Kr](https://github.com/yybmion/public-apis-4Kr))* — 한국에서 이용할 수 있는 공개 API들을 한곳에 모아 정리한 목록. 국내 서비스와 연결되는 API를 찾을 때 참고하는 자료 저장소입니다.
 - **[insane-search](https://github.com/sodam-ai/insane-search)** *(원본: [fivetaku/insane-search](https://github.com/fivetaku/insane-search))* — claude-code가 막힌(차단된) 웹사이트에 접속해야 할 때, 별도의 접속 열쇠(API 키)를 발급받지 않고도 자동으로 우회를 시도해주는 도구.
+
+---
 
 ---
 
@@ -254,6 +277,8 @@ AI가 브라우저나 컴퓨터 화면을 직접 조작하거나 웹 화면을 �
 - **[cua](https://github.com/sodam-ai/cua)** *(원본: [trycua/cua](https://github.com/trycua/cua))* — 여러 운영체제에서 "컴퓨터를 대신 써주는 AI"를 훈련·평가하기 위한 공개 도구 모음.
 - **[open-computer-use](https://github.com/sodam-ai/open-computer-use)** *(원본: [lineCode/open-computer-use](https://github.com/lineCode/open-computer-use))* — 컴퓨터 화면을 보고 마우스·키보드를 직접 조작해 업무를 처리하는 AI로, "OSWorld"라는 시험에서 82% 정답률을 낸 것으로 소개된 프로젝트.
 - **[pokeit-extension](https://github.com/sodam-ai/pokeit-extension)** *(원본: [sejinxjung/pokeit-extension](https://github.com/sejinxjung/pokeit-extension))* — 웹사이트 화면에 이상한 부분(깨진 디자인 등)이 없는지 검사해주는 크롬 확장 프로그램.
+
+---
 
 ---
 
@@ -275,6 +300,8 @@ AI가 브라우저나 컴퓨터 화면을 직접 조작하거나 웹 화면을 �
 
 ---
 
+---
+
 ## 14. Hermes 생태계 보조도구·접속 환경 (5개)
 
 Hermes Agent를 데스크톱·웹·CEO 콘솔 등 여러 방식으로 사용하거나 기능을 확장하는 도구입니다.
@@ -287,6 +314,8 @@ Hermes Agent를 데스크톱·웹·CEO 콘솔 등 여러 방식으로 사용하�
 
 ---
 
+---
+
 ## 15. 알림·HUD·작업 상태 모니터링 (3개)
 
 AI 작업 완료 알림, 사용량, 비용, 진행률 같은 상태를 눈에 보이게 알려주는 도구입니다.
@@ -294,6 +323,8 @@ AI 작업 완료 알림, 사용량, 비용, 진행률 같은 상태를 눈에 �
 - **[claude-notifications-go](https://github.com/sodam-ai/claude-notifications-go)** *(원본: [777genius/claude-notifications-go](https://github.com/777genius/claude-notifications-go))* — claude-code 작업이 끝나면 컴퓨터 알림창, 슬랙, 텔레그램 등으로 "다 됐어요"라고 알려주는 알림 프로그램.
 - **[claude-ultimate-hud](https://github.com/sodam-ai/claude-ultimate-hud)** *(원본: [hadamyeedady12-dev/claude-ultimate-hud](https://github.com/hadamyeedady12-dev/claude-ultimate-hud))* — 화면 맨 아래줄에 사용량 한도, 비용, 지금 하는 작업, 할 일 진행률을 한눈에 보여주는 표시줄.
 - **[token-horse](https://github.com/sodam-ai/token-horse)** *(원본: [ratelworks/token-horse](https://github.com/ratelworks/token-horse))* — AI 사용량(토큰)에 따라 반응하는 작은 "말(horse)" 캐릭터를 상태 표시줄에 보여주는 재미용 도구.
+
+---
 
 ---
 
@@ -316,7 +347,9 @@ AI 작업 완료 알림, 사용량, 비용, 진행률 같은 상태를 눈에 �
 
 ---
 
-## 17. 이미지·그래픽·폰트·로고·앱 스크린샷 (7개)
+---
+
+## 17. 이미지·그래픽·폰트·로고·앱 스크린샷 (8개)
 
 이미지 생성 보조, 폰트, 로고, 스프라이트, 앱스토어용 홍보 이미지 같은 그래픽 작업 도구입니다.
 
@@ -329,8 +362,33 @@ AI 작업 완료 알림, 사용량, 비용, 진행률 같은 상태를 눈에 �
 - **[watermarks-remover](https://github.com/sodam-ai/watermarks-remover)** *(원본: [guillaumemeyer/watermarks-remover](https://github.com/guillaumemeyer/watermarks-remover))* — 사용자가 소유한 콘텐츠에서 AI 워터마크를 제거하도록 만든 개인정보 보호 중심 앱. 저작권이나 이용약관을 지킬 수 있는 자기 소유 콘텐츠에 사용하는 것이 전제입니다.
 
 ---
+- **[AI-Toolkit-Easy-Install](https://github.com/sodam-ai/AI-Toolkit-Easy-Install)** *(원본: [Tavris1/AI-Toolkit-Easy-Install](https://github.com/Tavris1/AI-Toolkit-Easy-Install))* — AI 모델·LoRA 학습에 쓰는 Ostris AI-Toolkit을 Windows에서 간단히 설치할 수 있게 만든 휴대용 설치 도구.
 
-## 18. 프레젠테이션·차트·다이어그램 (6개)
+---
+
+## 18. ComfyUI 본체·설치·워크플로우·AI 연동 (15개)
+
+ComfyUI 자체를 설치·관리하거나, Claude Code·Codex·OpenClaw 같은 AI와 연결해 이미지·영상 작업 흐름을 만들고 실행하는 도구들입니다.
+
+- **[ComfyUI](https://github.com/sodam-ai/ComfyUI)** *(원본: [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI))* — 여러 기능 블록(노드)을 선으로 연결해 AI 이미지·영상 생성 과정을 만드는 대표적인 그래프 방식 프로그램. 화면 도구뿐 아니라 API와 백엔드 기능도 제공합니다.
+- **[Comfy-Desktop](https://github.com/sodam-ai/Comfy-Desktop)** *(원본: [Comfy-Org/Comfy-Desktop](https://github.com/Comfy-Org/Comfy-Desktop))* — ComfyUI를 일반 데스크톱 앱처럼 실행하고 사용할 수 있게 해주는 공식 데스크톱 프로그램.
+- **[ComfyUI-Manager](https://github.com/sodam-ai/ComfyUI-Manager)** *(원본: [Comfy-Org/ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager))* — ComfyUI의 추가 기능(커스텀 노드)을 설치·삭제·켜기·끄기하고 관련 정보를 한곳에서 관리하게 해주는 공식 관리 도구.
+- **[ComfyUI-Easy-Install](https://github.com/sodam-ai/ComfyUI-Easy-Install)** *(원본: [Tavris1/ComfyUI-Easy-Install](https://github.com/Tavris1/ComfyUI-Easy-Install))* — Windows·macOS·Linux에서 ComfyUI를 비교적 쉽게 설치할 수 있게 만든 휴대용 설치 도구.
+- **[comfy-cli](https://github.com/sodam-ai/comfy-cli)** *(원본: [Comfy-Org/comfy-cli](https://github.com/Comfy-Org/comfy-cli))* — ComfyUI를 터미널 명령으로 설치·실행·관리할 수 있게 해주는 공식 CLI 도구.
+- **[comfyui-mcp](https://github.com/sodam-ai/comfyui-mcp)** *(원본: [artokun/comfyui-mcp](https://github.com/artokun/comfyui-mcp))* — Claude·ChatGPT·Gemini 같은 AI가 MCP로 ComfyUI를 직접 다루게 해주는 연결 도구. 말로 이미지·영상·오디오를 만들고 작업 흐름을 작성·실행·수정할 수 있습니다.
+- **[ComfyUI-Agent-Kit](https://github.com/sodam-ai/ComfyUI-Agent-Kit)** *(원본: [SlavaSexton/ComfyUI-Agent-Kit](https://github.com/SlavaSexton/ComfyUI-Agent-Kit))* — Claude Code·Codex·Gemini CLI·Qwen Code 같은 AI 코딩 도구가 로컬 ComfyUI를 처음부터 끝까지 다루도록 돕는 스킬·템플릿 모음.
+- **[ComfyUI-Agent-Toolkit](https://github.com/sodam-ai/ComfyUI-Agent-Toolkit)** *(원본: [Zambav/ComfyUI-Agent-Toolkit](https://github.com/Zambav/ComfyUI-Agent-Toolkit))* — AI 에이전트에게 원하는 작업을 말로 시키면 ComfyUI 작업 흐름을 만들고 실행·확인해주는 도구. 이미지·영상·LoRA 작업을 자연어로 다루게 해줍니다.
+- **[ComfyUI_Skills_OpenClaw](https://github.com/sodam-ai/ComfyUI_Skills_OpenClaw)** *(원본: [HuangYuChuh/ComfyUI_Skills_OpenClaw](https://github.com/HuangYuChuh/ComfyUI_Skills_OpenClaw))* — OpenClaw·Hermes Agent·Codex·Claude Code 같은 AI가 ComfyUI 워크플로우를 다루도록 도와주는 스킬 모음.
+- **[comfyui-agent-skill](https://github.com/sodam-ai/comfyui-agent-skill)** *(원본: [MieMieeeee/comfyui-agent-skill](https://github.com/MieMieeeee/comfyui-agent-skill))* — AI 에이전트가 내 컴퓨터의 ComfyUI 서버에서 등록된 워크플로우를 실행하고 결과를 구조화된 데이터(JSON)로 받게 해주는 도구.
+- **[ComfyUI_Skill_CLI](https://github.com/sodam-ai/ComfyUI_Skill_CLI)** *(원본: [HuangYuChuh/ComfyUI_Skill_CLI](https://github.com/HuangYuChuh/ComfyUI_Skill_CLI))* — ComfyUI 워크플로우 스킬을 터미널에서 관리하고 실행하게 해주는 AI 에이전트용 CLI 도구.
+- **[comfy-swap](https://github.com/sodam-ai/comfy-swap)** *(원본: [kamjin3086/comfy-swap](https://github.com/kamjin3086/comfy-swap))* — ComfyUI에서 만든 작업 흐름을 AI 에이전트가 안정적으로 호출할 수 있는 REST API나 터미널 명령으로 바꿔주는 도구.
+- **[comfyui-codex](https://github.com/sodam-ai/comfyui-codex)** *(원본: [vavo/comfyui-codex](https://github.com/vavo/comfyui-codex))* — Codex가 ComfyUI 설치, 터미널 명령, API, 노드 제작, 워크플로우 수정, 모델 선택과 프롬프트 작업까지 도와주게 하는 플러그인.
+- **[comfyui-custom-node-skills](https://github.com/sodam-ai/comfyui-custom-node-skills)** *(원본: [jtydhr88/comfyui-custom-node-skills](https://github.com/jtydhr88/comfyui-custom-node-skills))* — Claude Code가 ComfyUI의 커스텀 노드(추가 기능 블록)를 만들 때 필요한 규칙과 지식을 모아둔 스킬 모음. 새 방식(V3)과 예전 방식(V1)을 모두 다룹니다.
+- **[comfyui-workflow-node-dev](https://github.com/sodam-ai/comfyui-workflow-node-dev)** *(원본: [Sunwood-ai-labs/comfyui-workflow-node-dev](https://github.com/Sunwood-ai-labs/comfyui-workflow-node-dev))* — Codex가 ComfyUI 워크플로우, App 모드, 커스텀 노드 개발을 도와주게 하는 스킬.
+
+---
+
+## 19. 프레젠테이션·차트·다이어그램 (6개)
 
 발표자료, 차트, 도식, 슬라이드를 만들고 편집·발표하는 데 특화된 도구입니다.
 
@@ -343,7 +401,9 @@ AI 작업 완료 알림, 사용량, 비용, 진행률 같은 상태를 눈에 �
 
 ---
 
-## 19. 영상·화면 녹화·모션·애니메이션 (9개)
+---
+
+## 20. 영상·화면 녹화·모션·애니메이션 (10개)
 
 영상 생성·편집, 화면 녹화, HTML 영상화, Lottie 애니메이션 같은 움직이는 콘텐츠 제작 도구입니다.
 
@@ -358,8 +418,11 @@ AI 작업 완료 알림, 사용량, 비용, 진행률 같은 상태를 눈에 �
 - **[reelforge](https://github.com/sodam-ai/reelforge)** *(원본: [gongnyang/reelforge](https://github.com/gongnyang/reelforge))* — 간단한 브리프 하나에서 내레이션·자막·장면 편집이 가능한 숏폼/롱폼 영상을 만드는 AI 영상 제작 파이프라인. 한국어 우선 설계와 HTML 기반 렌더링을 내세웁니다.
 
 ---
+- **[MiniMax-H3-Codex-Drama](https://github.com/sodam-ai/MiniMax-H3-Codex-Drama)** *(원본: [chiphoton/MiniMax-H3-Codex-Drama](https://github.com/chiphoton/MiniMax-H3-Codex-Drama))* — Codex 중심의 MiniMax H3 영상 제작 플러그인. 캐릭터·장면 설계부터 스토리보드, ComfyUI 생성, 후반 작업, 품질 점검까지 이어줍니다.
 
-## 20. 문서·오피스·기획서·전자책 제작 (3개)
+---
+
+## 21. 문서·오피스·기획서·전자책 제작 (3개)
 
 워드·엑셀·파워포인트, PRD, 전자책처럼 업무·출판 문서를 만드는 데 쓰는 도구입니다.
 
@@ -369,7 +432,9 @@ AI 작업 완료 알림, 사용량, 비용, 진행률 같은 상태를 눈에 �
 
 ---
 
-## 21. 파일 변환·OCR·CAD·PDF 처리 (4개)
+---
+
+## 22. 파일 변환·OCR·CAD·PDF 처리 (4개)
 
 문서·도면 파일의 형식을 바꾸거나 글자를 인식하고 PDF를 압축하는 파일 처리 도구입니다.
 
@@ -380,7 +445,9 @@ AI 작업 완료 알림, 사용량, 비용, 진행률 같은 상태를 눈에 �
 
 ---
 
-## 22. 한국어 글쓰기·문체·콘텐츠 품질 (2개)
+---
+
+## 23. 한국어 글쓰기·문체·콘텐츠 품질 (2개)
 
 AI가 작성한 한국어를 더 자연스럽고 사람다운 문체로 다듬는 데 특화된 도구입니다.
 
@@ -389,7 +456,9 @@ AI가 작성한 한국어를 더 자연스럽고 사람다운 문체로 다듬�
 
 ---
 
-## 23. SEO·콘텐츠 마케팅·SNS 자동화 (3개)
+---
+
+## 24. SEO·콘텐츠 마케팅·SNS 자동화 (3개)
 
 검색 노출을 분석·개선하거나 SNS 콘텐츠 제작·게시를 자동화하는 도구입니다.
 
@@ -399,7 +468,9 @@ AI가 작성한 한국어를 더 자연스럽고 사람다운 문체로 다듬�
 
 ---
 
-## 24. 투자·금융·시장 정보·뉴스레터 자동화 (3개)
+---
+
+## 25. 투자·금융·시장 정보·뉴스레터 자동화 (3개)
 
 투자·증권·시장 정보 조회와 뉴스레터·보고서 자동화에 관련된 도구입니다.
 
@@ -409,7 +480,9 @@ AI가 작성한 한국어를 더 자연스럽고 사람다운 문체로 다듬�
 
 ---
 
-## 25. 보안·권한·의존성 안전 점검 (3개)
+---
+
+## 26. 보안·권한·의존성 안전 점검 (3개)
 
 보안 취약점, 접근 권한, 새 라이브러리의 위험성을 점검하는 안전 도구입니다.
 
@@ -419,7 +492,9 @@ AI가 작성한 한국어를 더 자연스럽고 사람다운 문체로 다듬�
 
 ---
 
-## 26. 터미널·쉘·AI 도구 전환·개발 작업환경 (7개)
+---
+
+## 27. 터미널·쉘·AI 도구 전환·개발 작업환경 (7개)
 
 터미널 창 관리, 셸 작업, 여러 AI 코딩 도구 전환, 개발용 글꼴 등 작업 환경을 편하게 만드는 도구입니다.
 
@@ -433,7 +508,9 @@ AI가 작성한 한국어를 더 자연스럽고 사람다운 문체로 다듬�
 
 ---
 
-## 27. AI 연구·모델 성능·실험적 기반기술 (6개)
+---
+
+## 28. AI 연구·모델 성능·실험적 기반기술 (6개)
 
 AI 모델의 추론·연산 성능이나 새로운 에이전트 구조를 시험하는 연구·실험 성격의 프로젝트입니다.
 
@@ -446,7 +523,9 @@ AI 모델의 추론·연산 성능이나 새로운 에이전트 구조를 시험
 
 ---
 
-## 28. 생활·교육·개발자 행사·기타 유틸리티 (6개)
+---
+
+## 29. 생활·교육·개발자 행사·기타 유틸리티 (6개)
 
 위 전문 분야에 속하지 않는 생활·교육·개발자 정보·윈도우 편의 도구입니다.
 
@@ -459,9 +538,11 @@ AI 모델의 추론·연산 성능이나 새로운 에이전트 구조를 시험
 
 ---
 
+---
+
 ## 참고 사항
 
-- 이 문서는 **2026-09-11 기준**  [https://github.com/sodam-ai](https://github.com/sodam-AI?tab=repositories) 의 현재 공개 포크를 기준으로 다시 정리한 스냅샷입니다. 이후 포크를 추가·삭제하면 개수와 목록은 달라질 수 있습니다.
-- 설명은 기존 문서에 정리된 GitHub 공개 요약·README 기반 쉬운 설명을 최대한 유지했고, 이번에 새로 확인된 `OmniRoute`, `agent-skills`는 현재 GitHub 저장소 메타데이터를 바탕으로 같은 형식의 쉬운 설명을 추가했습니다.
-- 한 저장소가 여러 용도로 쓰일 수 있어도 **가장 대표적인 주된 목적 하나**를 기준으로 한 카테고리에만 배치했습니다. 그래서 전체 개수와 카테고리 합계가 정확히 일치합니다.
-- 별표(⭐, star) 개수는 이번 정리에서 다루지 않았습니다.
+- 이 문서는 **2026-09-12 기준 스냅샷**입니다. GitHub 저장소는 이후 새로 포크하거나 삭제하면 개수가 달라질 수 있습니다.
+- 설명은 각 저장소의 공개 설명과 README, 기존 검증 자료를 바탕으로 **처음 보는 사람도 이해하기 쉬운 말**로 짧게 풀어쓴 것입니다.
+- 이 목록에 있다는 사실이 설치·사용을 추천한다는 뜻은 아닙니다. 실제 사용 전에는 각 원본 저장소의 README, 라이선스, 설치 조건을 확인하는 것이 좋습니다.
+- 투자·금융 관련 도구는 정보 제공·실험 목적의 오픈소스일 수 있으며, 실제 투자 판단과 결과에 대한 책임은 사용자 본인에게 있습니다.
